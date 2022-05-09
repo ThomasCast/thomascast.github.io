@@ -1,22 +1,19 @@
 {
-  "name": "portfolio",
+  "name": "writing-sass",
   "version": "1.0.0",
-  "description": "",
+  "description": "Joe Blow's portfolio",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o css/ --recursive"
+    "sass": "sass --watch ./sass/main.scss:.public/css/style.css"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ThomasCast/Portfolio.git"
+    "url": "git+https://github.com/gerkx/maintainable-css-with-sass.git"
   },
-  "author": "",
+  "author": "gerkx",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ThomasCast/Portfolio/issues"
+    "url": "https://github.com/gerkx/maintainable-css-with-sass/issues"
   },
-  "homepage": "https://github.com/ThomasCast/Portfolio#readme",
-  "dependencies": {
-    "node-sass": "^7.0.1"
-  }
+  "homepage": "https://github.com/gerkx/maintainable-css-with-sass#readme"
 }
