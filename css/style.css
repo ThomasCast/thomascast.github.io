@@ -17,7 +17,7 @@ body {
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: #15DEA5;
+  color: #15dea5;
   font-size: 2rem;
   font-weight: 100;
   line-height: 1.7;
@@ -45,14 +45,14 @@ button {
 
 .btn {
   padding: 1.5rem;
-  border: 0.1rem solid #15DEA5;
-  color: #15DEA5;
+  border: 0.1rem solid #15dea5;
+  color: #15dea5;
   background: #001534;
   cursor: pointer;
 }
 .btn:hover {
-  background: #15DEA5;
-  color: #D6FFF5;
+  background: #15dea5;
+  color: #d6fff5;
 }
 .btn--full-width {
   width: 100%;
@@ -60,7 +60,7 @@ button {
 }
 
 .header {
-  background: #15DEA5;
+  background: #15dea5;
   height: 10rem;
   display: flex;
   align-items: center;
@@ -86,7 +86,7 @@ button {
 }
 .nav__link a {
   text-decoration: none;
-  color: #D6FFF5;
+  color: #d6fff5;
 }
 .nav__link--active {
   color: #001534;
@@ -102,7 +102,7 @@ button {
 .container {
   margin: 6rem;
   padding: 1.5rem 1.5rem 0 1.5rem;
-  border: 0.1rem solid #D6FFF5;
+  border: 0.1rem solid #d6fff5;
 }
 
 .form {
@@ -113,12 +113,12 @@ button {
   width: 100%;
   color: #fff;
   text-shadow: 0.55rem 0.55rem #11af82;
-  background: #15DEA5;
+  background: #15dea5;
   line-height: 5rem;
   padding: 1.5rem;
 }
 .form__field label {
-  color: #D6FFF5;
+  color: #d6fff5;
   display: block;
   font-size: 2rem;
   line-height: 2rem;
@@ -127,21 +127,21 @@ button {
 .form__field input {
   width: 100%;
   background: #001534;
-  border: 0.1rem solid #15DEA5;
+  border: 0.1rem solid #15dea5;
   padding: 1.5rem;
-  color: #D6FFF5;
+  color: #d6fff5;
   font-weight: 900;
   font-style: italic;
   font-size: 2.75rem;
-  border: 0.1rem solid #15DEA5;
+  border: 0.1rem solid #15dea5;
   background-color: #001534;
-  color: #15DEA5;
+  color: #15dea5;
 }
 .form__field textarea {
   width: 100%;
-  color: #15DEA5;
+  color: #15dea5;
   background: #001534;
-  border: 0.1rem solid #15DEA5;
+  border: 0.1rem solid #15dea5;
   outline: none;
   padding: 1.5rem;
   margin-bottom: 0.75rem;
@@ -152,11 +152,11 @@ button {
   font-size: 6rem;
   font-weight: 900;
   font-style: italic;
-  color: #D6FFF5;
+  color: #d6fff5;
   margin: 2rem 6rem -3rem 6rem;
 }
 .quote strong {
-  color: #15DEA5;
+  color: #15dea5;
 }
 
 .proj-grid {
@@ -171,7 +171,7 @@ button {
 }
 .proj-prev__image {
   margin: 0;
-  opacity: .2;
+  opacity: 0.2;
   width: 100%;
   display: block;
   overflow: hidden;
@@ -199,7 +199,7 @@ button {
   cursor: pointer;
 }
 .proj-prev:hover > .proj-prev__heading {
-  background: #15DEA5;
+  background: #15dea5;
 }
 .proj-prev:hover > .proj-prev__image {
   opacity: 1;
@@ -211,7 +211,7 @@ button {
   grid-template-columns: 2fr 5fr;
   grid-template-rows: repeat(3, auto);
   padding: 1.5rem;
-  grid-template-areas: "imagery heading" "imagery copy" "imagery btn";
+  grid-template-areas: 'imagery heading' 'imagery copy' 'imagery btn';
   margin-bottom: 1.5rem;
 }
 .about__heading {
@@ -228,7 +228,7 @@ button {
   overflow: hidden;
   width: 80%;
   border-radius: 1000rem;
-  border: 1.5rem solid #15DEA5;
+  border: 1.5rem solid #15dea5;
 }
 .about__pic img {
   display: block;
@@ -243,15 +243,15 @@ button {
 }
 .about__btn {
   padding: 1.5rem;
-  border: 0.1rem solid #15DEA5;
-  color: #15DEA5;
+  border: 0.1rem solid #15dea5;
+  color: #15dea5;
   background: #001534;
   cursor: pointer;
   grid-area: btn;
 }
 .about__btn:hover {
-  background: #15DEA5;
-  color: #D6FFF5;
+  background: #15dea5;
+  color: #d6fff5;
 }
 .about__btn--full-width {
   width: 100%;
@@ -268,7 +268,7 @@ button {
   grid-template-columns: 5fr 3fr;
   grid-template-rows: repeat(3, auto);
   grid-gap: 1.5rem;
-  grid-template-areas: "image synopsis" "tags synopsis" "btn btn";
+  grid-template-areas: 'image synopsis' 'tags synopsis' 'btn btn';
 }
 .project__image {
   grid-area: image;
@@ -303,23 +303,25 @@ button {
   color: #fff;
 }
 .project__tags p strong {
-  color: #15DEA5;
+  color: #15dea5;
   font-weight: 900;
   font-style: italic;
 }
 .project__btn {
   padding: 1.5rem;
-  border: 0.1rem solid #15DEA5;
-  color: #15DEA5;
+  border: 0.1rem solid #15dea5;
+  color: #15dea5;
   background: #001534;
   cursor: pointer;
   grid-area: btn;
 }
 .project__btn:hover {
-  background: #15DEA5;
-  color: #D6FFF5;
+  background: #15dea5;
+  color: #d6fff5;
 }
 .project__btn--full-width {
   width: 100%;
   margin: 0 auto;
 }
+
+/*# sourceMappingURL=style.css.map */
