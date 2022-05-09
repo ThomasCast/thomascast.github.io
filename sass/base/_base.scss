@@ -1,7 +1,6 @@
-
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -9,16 +8,22 @@ html {
 }
 
 body {
-	font-family: 'Roboto', sans-serif;
-	line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  background-color: lightgray;
 }
 
-h1, h2, h3, h4, p, a {
-  color: $color-grey;
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+  color: $color-blue;
 }
 
 h1 {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 p {
@@ -31,17 +36,19 @@ a {
 
 section {
   margin-top: 100px;
-  & h1, h2, h3, h4 {
-          text-align: center;
-          font-size: 2.5em;
-          font-weight: bold;
-          padding: 30px;
+  & h1,
+  h2,
+  h3,
+  h4 {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    padding: 30px;
   }
 }
 
 #contact {
   margin-top: 180px;
-  background-color: $color-bg-orange;
   & h2 {
     font-size: 3em;
   }

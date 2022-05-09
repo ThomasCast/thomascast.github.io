@@ -7,13 +7,13 @@
   & li {
     display: inline-flex;
     padding-right: 20px;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   }
   & a {
-    color: #fff;
     text-transform: uppercase;
     text-decoration: none;
-    &:hover, :focus {
+    &:hover,
+    :focus {
       color: $color-orange;
     }
   }
@@ -27,8 +27,8 @@
   font-size: 2em;
   padding: 0;
   font-weight: bold;
-  color: white;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  color: $color-blue;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   &:hover {
     color: $color-orange;
   }
@@ -38,4 +38,3 @@
   color: $color-orange;
   font-size: 2.5;
 }
-

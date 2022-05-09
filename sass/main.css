@@ -98,10 +98,16 @@ html {
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.5;
+  background-color: lightgray;
 }
 
-h1, h2, h3, h4, p, a {
-  color: #444444;
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+  color: #28089b;
 }
 
 h1 {
@@ -120,7 +126,10 @@ section {
   margin-top: 100px;
 }
 
-section h1, section h2, section h3, section h4 {
+section h1,
+section h2,
+section h3,
+section h4 {
   text-align: center;
   font-size: 2.5em;
   font-weight: bold;
@@ -129,7 +138,6 @@ section h1, section h2, section h3, section h4 {
 
 #contact {
   margin-top: 180px;
-  background-color: rgba(255, 166, 0, 0.3);
 }
 
 #contact h2 {
@@ -141,10 +149,6 @@ section h1, section h2, section h3, section h4 {
 }
 
 .banner {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.055))), url(/images/ponton.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.055)), url(/images/ponton.jpg);
-  background-position: center;
-  background-size: cover;
   height: 100vh;
   padding: 10px;
 }
@@ -170,7 +174,6 @@ section h1, section h2, section h3, section h4 {
   font-size: 48px;
   text-align: center;
   padding: 0;
-  color: white;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
@@ -178,7 +181,6 @@ section h1, section h2, section h3, section h4 {
   font-size: 3em;
   text-align: center;
   padding: 0;
-  color: white;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
@@ -264,12 +266,12 @@ section h1, section h2, section h3, section h4 {
 }
 
 .navbar a {
-  color: #fff;
   text-transform: uppercase;
   text-decoration: none;
 }
 
-.navbar a:hover, .navbar a :focus {
+.navbar a:hover,
+.navbar a :focus {
   color: orange;
 }
 
@@ -282,7 +284,7 @@ section h1, section h2, section h3, section h4 {
   font-size: 2em;
   padding: 0;
   font-weight: bold;
-  color: white;
+  color: #28089b;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
@@ -331,7 +333,8 @@ section h1, section h2, section h3, section h4 {
           flex-direction: row;
 }
 
-label, input {
+label,
+input {
   margin-top: 10px;
   height: 35px;
   width: 100%;
@@ -343,7 +346,8 @@ label, input {
           box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-#fname, #date-checkin {
+#fname,
+#date-checkin {
   margin-right: 10px;
 }
 
@@ -371,7 +375,7 @@ textarea {
 
 .submit_button input {
   width: 50%;
-  color: #444444;
+  color: #28089b;
   height: 40px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -390,7 +394,7 @@ textarea {
 }
 
 .footer {
-  background-color: #444444;
+  background-color: #28089b;
   font-size: 1em;
   -webkit-box-align: center;
       -ms-flex-align: center;
