@@ -19,41 +19,5 @@ h3,
 h4,
 p,
 a {
-  color: $color-blue;
-}
-
-h1 {
-  font-weight: bold;
-}
-
-p {
-  font-size: 1em;
-}
-
-a {
-  text-decoration: none;
-}
-
-section {
-  margin-top: 100px;
-  & h1,
-  h2,
-  h3,
-  h4 {
-    text-align: center;
-    font-size: 2.5em;
-    font-weight: bold;
-    padding: 30px;
-  }
-}
-
-#contact {
-  margin-top: 180px;
-  & h2 {
-    font-size: 3em;
-  }
-}
-
-.map {
-  margin-right: 30px;
+  color: grey;
 }
