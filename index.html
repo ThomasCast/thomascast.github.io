@@ -4,62 +4,212 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/a499632b69.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:100,900i"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Joe Blow's Portfolio</title>
+    <title>Portfolio - Thomas Castaldi</title>
   </head>
   <body>
-    <header class="header">
-      <h1 class="header__logo">Joe Blow</h1>
-      <nav class="nav">
-        <ul>
-          <li class="nav__link nav__link--active">work</li>
-          <li class="nav__link"><a href="#">about</a></li>
-          <li class="nav__link"><a href="#">contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <section class="quote">
-      "We are the <strong>music makers,</strong>
-      <br />
-      and we are the <strong>dreamers of dreams."</strong>
-    </section>
-
-    <main class="container">
-      <div class="proj-grid">
-        <section class="proj-prev" onclick="location.href='#'">
-          <div class="proj-prev__image">
-            <img src="/assets/images/#" alt="project title goes here" />
-          </div>
-          <h1 class="proj-prev__heading">Project Title</h1>
-          <p class="proj-prev__byline">project keywords would go here</p>
-        </section>
-        <section class="proj-prev">
-          <div class="proj-prev__image">
-            <img src="/assets/images/#" alt="project title goes here" />
-          </div>
-          <h1 class="proj-prev__heading">Project Title</h1>
-          <p class="proj-prev__byline">project keywords would go here</p>
-        </section>
-        <section class="proj-prev">
-          <div class="proj-prev__image">
-            <img src="/assets/images/#" alt="project title goes here" />
-          </div>
-          <h1 class="proj-prev__heading">Project Title</h1>
-          <p class="proj-prev__byline">project keywords would go here</p>
-        </section>
-        <section class="proj-prev">
-          <div class="proj-prev__image">
-            <img src="/assets/images/#" alt="project title goes here" />
-          </div>
-          <h1 class="proj-prev__heading">Project Title</h1>
-          <p class="proj-prev__byline">project keywords would go here</p>
-        </section>
+    <header id="home" class="header">
+      <div class="menu">
+        <div class="logo">
+          <img src="/assets/images/logo.png" alt="logo CT-Dev" />
+        </div>
+        <div class="navbar">
+          <nav class="nav">
+            <ul>
+              <li class="nav__link nav__link--active">
+                <a href="#home">Accueil</a>
+              </li>
+              <li class="nav__link"><a href="#about">A propos</a></li>
+              <li class="nav__link"><a href="#skills">Compétences</a></li>
+              <li class="nav__link"><a href="#portfolio">Portfolio</a></li>
+              <li class="nav__link"><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
+      <div class="banner">
+        <h1>CASTALDI Thomas</h1>
+        <p>Développeur Web Junior</p>
+        <div class="btn__banner">
+          <a class="btn btn__portfolio" href="#portfolio"
+            >Parcourir mon portfolio</a
+          >
+          <a class="btn btn__CV" href="#CV">consulter mon CV</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="about" class="section" onclick="location.href='#'">
+        <div class="container">
+          <div class="section-title">
+            <h1>A propos</h1>
+          </div>
+          <div class="about">
+            <div class="photo">
+              <img src="/assets/images/avatar-2.png" alt="avatar" />
+            </div>
+            <div class="description">
+              <p>
+                Bonjour, je suis Thomas Castaldi,
+                <strong>développeur web junior</strong>. <br />
+                En reconversion dans le numérique depuis début 2021, j’ai
+                commencé à apprendre en autodidacte les fondamentaux (<strong
+                  >HTML / CSS</strong
+                >) puis j’ai intégré un bootcamp de 9 semaines (<strong
+                  >Le Wagon Marseille</strong
+                >) qui m’a permis de consolider mes acquis, d'apprendre de
+                nouveaux languages comme
+                <strong>Javascript et Ruby on Rails</strong> ou encore de
+                découvrir les différents métiers du développement web (<strong
+                  >UX/UI design, Front-End, Back-End, Fullstack</strong
+                >). Actuellement, je travaille en freelance ou j'ai pu réaliser
+                un site vitrine et un site e-commerce. Plutôt attiré par le côté
+                front-end, je prévois prochainement de me former sur le
+                framework <strong>React JS</strong> afin de créer des projets
+                d'applications web et mobiles aux contenus dynamiques. N’hésitez
+                pas à parcourir mon site si vous souhaitez en savoir plus sur
+                mes compétences. Vous pouvez également m'envoyer un message dans
+                la partie Contact.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="section-title">
+            <h1>Mes compétences</h1>
+          </div>
+          <div class="blocks">
+            <div class="skills-block">
+              <div class="skills-title">
+                <h2>Front-End</h2>
+              </div>
+              <div class="skills-group-items">
+                <div class="skills-items">
+                  <img src="/assets/images/html.png" alt="logo HTML" />
+                  <h3>HTML</h3>
+                </div>
+                <div class="skills-items">
+                  <img src="/assets/images/css-3.png" alt="logo CSS" />
+                  <h3>CSS</h3>
+                </div>
+                <div class="skills-items">
+                  <img src="/assets/images/js.png" alt="logo Javascript" />
+                  <h3>Javascript</h3>
+                </div>
+              </div>
+            </div>
+            <div class="skills-block">
+              <div class="skills-title">
+                <h2>Back-End</h2>
+              </div>
+              <div class="skills-group-items">
+                <div class="skills-items">
+                  <img src="/assets/images/ruby.png" alt="logo Ruby" />
+                  <h3>Ruby</h3>
+                </div>
+                <div class="skills-items">
+                  <img src="/assets/images/postgre.png" alt="logo PostgreSQL" />
+                  <h3>PostgreSQL</h3>
+                </div>
+              </div>
+            </div>
+            <div class="skills-block">
+              <div class="skills-title">
+                <h2>CMS</h2>
+              </div>
+              <div class="skills-group-items">
+                <div class="skills-items">
+                  <img src="/assets/images/wordpress.png" alt="logo Worpress" />
+                  <h3>Worpress</h3>
+                </div>
+                <div class="skills-items">
+                  <img src="/assets/images/shopify.png" alt="logo Shopify" />
+                  <h3>Shopify</h3>
+                </div>
+              </div>
+            </div>
+            <div class="skills-block">
+              <div class="skills-title">
+                <h2>Outils</h2>
+              </div>
+              <div class="skills-group-items">
+                <div class="skills-items">
+                  <img src="/assets/images/github.png" alt="logo Git/Github" />
+                  <h3>Git/Github</h3>
+                </div>
+                <div class="skills-items">
+                  <img src="/assets/images/figma.png" alt="logo Figma" />
+                  <h3>Figma</h3>
+                </div>
+                <div class="skills-items">
+                  <img src="/assets/images/heroku.png" alt="logo Heroku" />
+                  <h3>Heroku</h3>
+                </div>
+                <div class="skills-items">
+                  <img
+                    src="/assets/images/bootstrap.png"
+                    alt="logo Bootstrap"
+                  />
+                  <h3>Bootstrap</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="portfolio" class="section">
+        <div class="container">
+          <div class="section-title">
+            <h1>Portfolio</h1>
+          </div>
+          <div class="projects">
+            <div class="project">
+              <img src="/assets/images/#" alt="" />
+            </div>
+            <div class="project">
+              <img src="/assets/images/#" alt="" />
+            </div>
+            <div class="project">
+              <img src="/assets/images/#" alt="" />
+            </div>
+            <div class="project">
+              <img src="/assets/images/#" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="section-title">
+            <h1>Contact</h1>
+          </div>
+          <div class="social-network"></div>
+        </div>
+      </section>
     </main>
+    <section id="footer" class="section">
+      <div class="container">
+        <div class="footer-copyright">
+          <p>
+            CT-DEV © 2022 - Création de sites et applications web - Freelance
+            Marseille (France)
+          </p>
+        </div>
+        <div class="footer-links">
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

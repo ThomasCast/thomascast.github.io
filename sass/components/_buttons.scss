@@ -1,3 +1,30 @@
+.btn__banner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .btn {
-    @include btn
+  padding: 8px 20px;
+  margin: 0 20px 0 20px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  transition: ease-in-out all 0.5s;
+  border: 2px solid $colour-primary;
+  &__portfolio {
+    color: $colour-primary;
+    &:hover {
+      color: white;
+      background-color: $colour-primary;
+    }
+  }
+  &__CV {
+    color: white;
+    background-color: $colour-primary;
+    &:hover {
+      color: $colour-primary;
+      background-color: white;
+    }
+  }
 }

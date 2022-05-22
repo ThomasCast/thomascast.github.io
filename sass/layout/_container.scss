@@ -1,6 +1,4 @@
 .container {
-    margin: $layout-margin;
-    padding: $grid-gutter $grid-gutter 0 $grid-gutter;
-    @include border($colour-accent);
+  margin: 0 auto;
+  padding: 0 100px;
 }
-
