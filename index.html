@@ -193,7 +193,48 @@
           <div class="section-title">
             <h1>Contact</h1>
           </div>
-          <div class="social-network"></div>
+          <div class="info-contact">
+            <form action="./contact.php" method="POST" class="form">
+              <div class="info-name">
+                <input
+                  type="text"
+                  id="fname"
+                  name="firstname"
+                  placeholder=" Prénom"
+                  required
+                />
+                <input
+                  type="text"
+                  id="lname"
+                  name="lastname"
+                  placeholder=" Nom"
+                  required
+                />
+              </div>
+              <div class="email">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder=" E-mail"
+                  required
+                />
+              <div>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder=" Message"
+                ></textarea>
+              </div>
+              <div class="submit_button">
+                <input type="submit" value="Envoyer" />
+              </div>
+            </form>
+          </div>
+          <div class="social-network">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
         </div>
       </section>
     </main>
