@@ -248,45 +248,159 @@ button {
   color: white;
 }
 
-.projects-group {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+.projects-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  justify-items: center;
 }
 
-.projects-card {
-  width: 600px;
+.project {
+  position: relative;
+  border-radius: 10px;
+  height: 280px;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.3);
 }
-.form {
+.project:hover .project-description {
+  visibility: visible;
+  opacity: 1;
+}
+
+.project-img {
   width: 100%;
+  height: 280px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
 }
-.form__heading {
-  width: 100%;
-  color: white;
-  background: #5b93a0;
-  line-height: 2rem;
-}
-.form__field label {
-  color: #5b93a0;
-  display: block;
-  font-size: 2rem;
-  line-height: 2rem;
-}
-.form__field input {
-  width: 100%;
-  font-weight: 900;
-  font-style: italic;
-  font-size: 2.75rem;
+
+.project-description {
+  margin: 5px 5px 5px 5px;
+  padding: 10px;
+  border-radius: 10px;
+  position: absolute;
+  height: 270px;
+  top: 0px;
+  left: 0px;
+  width: calc(100% - 10px);
   background-color: #aacfd0;
-  color: #5b93a0;
+  color: #166678;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.4s, opacity 0.4s ease-in-out;
 }
-.form__field textarea {
+.project-description p {
+  text-align: center;
+}
+.project-description p.title {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.project-description p.project-description-text {
+  font-size: 16px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+.project-description p.project-technos {
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+.project-description p.project-button {
+  margin-top: 20px;
+}
+
+.tag {
+  padding: 5px;
+  margin: 0 5px;
+  background-color: #166678;
+  color: white;
+  border-radius: 5px;
+}
+
+.visit-button {
+  color: #166678;
+  margin-top: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  width: 500px;
+}
+
+.info-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #aacfd0;
+  border-radius: 20px;
+}
+
+.info-perso {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #166678;
+}
+
+.info-name {
+  display: flex;
+  flex-direction: row;
+}
+.info-name input {
+  border: none;
+}
+.info-name input .right {
+  margin-left: 10px;
+}
+
+label,
+input {
+  margin-top: 10px;
+  height: 35px;
   width: 100%;
-  color: #5b93a0;
-  background: #aacfd0;
-  outline: none;
+  border: none;
+  border-radius: 3px;
+  font-size: 1em;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+#fname {
+  margin-right: 10px;
+}
+
+textarea {
+  max-width: 500px;
+  min-width: 100%;
+  margin-top: 10px;
+  height: 150px;
+  border: none;
+  border-radius: 3px;
+  font-size: 1em;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.submit_button {
+  display: flex;
+  justify-content: center;
+}
+.submit_button input {
+  width: 50%;
+  color: #166678;
+  height: 40px;
+  align-items: center;
+  font-size: 1.5;
+  border-radius: 3px;
+  background-color: white;
+  transition: background-color 0.5s ease;
+}
+.submit_button input:hover {
+  background-color: #166678;
+  color: white;
+  cursor: pointer;
 }
 
 #footer {
