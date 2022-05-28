@@ -16,36 +16,30 @@
     <title>Portfolio - Thomas Castaldi</title>
   </head>
   <body>
-    <header id="home" class="header">
-      <div class="menu">
-        <div class="logo">
-          <img src="/assets/images/logo.png" alt="logo CT-Dev" />
-        </div>
-        <div class="navbar">
-          <nav class="nav">
-            <ul>
-              <li class="nav__link nav__link--active">
-                <a href="#home">Accueil</a>
-              </li>
-              <li class="nav__link"><a href="#about">A propos</a></li>
-              <li class="nav__link"><a href="#skills">Compétences</a></li>
-              <li class="nav__link"><a href="#portfolio">Portfolio</a></li>
-              <li class="nav__link"><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
+    <nav class="navbar transparent-nav">
+      <div class="nav-menu">
+        <a class="nav-logo" href="#home">
+          <img src="/assets/images/logo.png" alt="Logo CT-DEV">
+        </a>
+        <div class="nav-links">
+          <ul>
+            <li class="nav__link nav__link--active"><a href="#home">Accueil</a></li>
+            <li class="nav__link"><a href="#about">A propos</a></li>
+            <li class="nav__link"><a href="#skills">Compétences</a></li>
+            <li class="nav__link"><a href="#portfolio">Portfolio</a></li>
+            <li class="nav__link"><a href="#contact">Contact</a></li>
+          </ul>
         </div>
       </div>
-      <div class="banner">
-        <h1>CASTALDI Thomas</h1>
-        <p>Développeur Web Junior</p>
-        <div class="btn__banner">
-          <a class="btn btn__portfolio" href="#portfolio"
-            >Parcourir mon portfolio</a
-          >
-          <a class="btn btn__CV" href="#CV">consulter mon CV</a>
-        </div>
+    </nav>
+    <div id="home" class="banner">
+      <h1>CASTALDI Thomas</h1>
+      <p>Développeur Web Junior</p>
+      <div class="btn__banner">
+        <a class="btn btn__portfolio" href="#portfolio">Parcourir mon portfolio</a>
+        <a class="btn btn__CV" href="#CV">consulter mon CV</a>
       </div>
-    </header>
+    </div>
     <main>
       <section id="about" class="section" onclick="location.href='#'">
         <div class="container">
@@ -61,16 +55,10 @@
                 Bonjour, je suis Thomas Castaldi,
                 <strong>développeur web junior</strong>. <br />
                 En reconversion dans le numérique depuis début 2021, j’ai
-                commencé à apprendre en autodidacte les fondamentaux (<strong
-                  >HTML / CSS</strong
-                >) puis j’ai intégré un bootcamp de 9 semaines (<strong
-                  >Le Wagon Marseille</strong
-                >) qui m’a permis de consolider mes acquis, d'apprendre de
-                nouveaux languages comme
-                <strong>Javascript et Ruby on Rails</strong> ou encore de
-                découvrir les différents métiers du développement web (<strong
-                  >UX/UI design, Front-End, Back-End, Fullstack</strong
-                >). Actuellement, je travaille en freelance ou j'ai pu réaliser
+                commencé à apprendre en autodidacte les fondamentaux (<strong>HTML / CSS</strong>) puis j’ai intégré un bootcamp de 9 semaines 
+                (<strong>Le Wagon Marseille</strong>) qui m’a permis de consolider mes acquis, d'apprendre de nouveaux languages comme
+                <strong>Javascript et Ruby on Rails</strong> ou encore de découvrir les différents métiers du développement web 
+                (<strong>UX/UI design, Front-End, Back-End, Fullstack</strong>). Actuellement, je travaille en freelance ou j'ai pu réaliser
                 un site vitrine et un site e-commerce. Plutôt attiré par le côté
                 front-end, je prévois prochainement de me former sur le
                 framework <strong>React JS</strong> afin de créer des projets
@@ -105,6 +93,10 @@
                 <div class="skills-items">
                   <img src="/assets/images/js.png" alt="logo Javascript" />
                   <h3>Javascript</h3>
+                </div>
+                <div class="skills-items">
+                  <img src="/assets/images/sass.png" alt="logo Sass" />
+                  <h3>Sass</h3>
                 </div>
               </div>
             </div>
@@ -172,18 +164,36 @@
           <div class="section-title">
             <h1>Portfolio</h1>
           </div>
-          <div class="projects">
-            <div class="project">
-              <img src="/assets/images/#" alt="" />
+          <div class="projects-group">
+            <div class="projects-card">
+              <a href="#">
+                <img src="/assets/images/portfolio.png" alt="Mon Portfolio" />
+              </a>
             </div>
-            <div class="project">
-              <img src="/assets/images/#" alt="" />
+            <div class="projects-card">
+              <a href="">
+                <img src="/assets/images/green-me-food.png" alt="Green me Food" />
+              </a>
             </div>
-            <div class="project">
-              <img src="/assets/images/#" alt="" />
+            <div class="projects-card">
+              <a href="">
+                <img src="/assets/images/mobil-home.png" alt="Mobil-home de St Trop'" />
+              </a>
             </div>
-            <div class="project">
-              <img src="/assets/images/#" alt="" />
+            <div class="projects-card">
+              <a href="">
+                <img src="/assets/images/studio-cashmere-8.png" alt="Studio Cashmere 8" />
+              </a>
+            </div>
+            <div class="projects-card">
+              <a href="">
+                <img src="/assets/images/#" alt="Porjet Wordpress" />
+              </a>
+            </div>
+            <div class="projects-card">
+              <a href="">
+                <img src="/assets/images/#" alt="Projet Fictif" />
+              </a>
             </div>
           </div>
         </div>
@@ -196,15 +206,8 @@
           <div class="info-contact">
             <form action="./contact.php" method="POST" class="form">
               <div class="info-name">
-                <input
-                  type="text"
-                  id="fname"
-                  name="firstname"
-                  placeholder=" Prénom"
-                  required
-                />
-                <input
-                  type="text"
+                <input type="text" id="fname" name="firstname" placeholder=" Prénom" required/>
+                <input type="text"
                   id="lname"
                   name="lastname"
                   placeholder=" Nom"

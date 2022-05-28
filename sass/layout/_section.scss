@@ -28,22 +28,27 @@
 }
 
 .blocks {
-  padding: 30px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .skills-block {
   background-color: $colour-secondary;
   border-radius: 15px;
+  width: 600px;
+  padding: 10px 30px 30px 30px;
   box-shadow: 0px 0px 5px 0px $box-shadow;
+  margin: 35px;
 }
 
 .skills-title {
   text-align: center;
   color: white;
   padding: 10px;
+  text-shadow: 0px 0px 5px 0px $box-shadow;
 }
 
 .skills-group-items {
@@ -51,17 +56,21 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  padding: 20px;
 }
 
 .skills-group-items {
   text-align: center;
   & img {
     width: 100px;
+    transition: transform 0.1s ease-in-out;
     &:hover {
+      transform: scale(1.1);
     }
   }
   & h3 {
     font-size: 24px;
+    color: $colour-primary-dark;
   }
 }
 
@@ -70,15 +79,16 @@
   color: white;
 }
 
-.projects {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
+.projects-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
-.project {
-  width: 400px;
-  height: 400px;
-  background-color: white;
-  border-radius: 20px;
+.projects-card {
+  width: 600px;
+  & a {
+  }
 }

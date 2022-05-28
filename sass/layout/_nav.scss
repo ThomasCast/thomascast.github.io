@@ -1,3 +1,33 @@
+.navbar {
+  padding: 20px;
+  top: 0px;
+  z-index: 100000;
+  position: sticky;
+}
+
+.transparent-nav {
+  background-color: transparent;
+}
+
+.white-nav {
+  background-color: white;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  height: 80px;
+  & img {
+    width: 80px;
+  }
+}
+
 .nav {
   display: flex;
   text-align: right;
