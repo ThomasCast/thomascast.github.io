@@ -293,6 +293,7 @@ button {
   text-align: center;
 }
 .project-description p.title {
+  font-size: 30px;
   font-weight: 700;
   margin-bottom: 10px;
 }
@@ -302,6 +303,7 @@ button {
   margin-bottom: 10px;
 }
 .project-description p.project-technos {
+  font-weight: 500;
   text-decoration: underline;
   margin-bottom: 10px;
 }
