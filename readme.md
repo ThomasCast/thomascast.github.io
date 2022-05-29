@@ -1,1 +1,1 @@
-# My portfolio from scracth.
+# My portfolio from scracth using HTML / SASS / JS.
