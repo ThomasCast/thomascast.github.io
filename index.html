@@ -16,36 +16,38 @@
     <title>Portfolio - Thomas Castaldi</title>
   </head>
   <body>
-    <nav class="navbar transparent-nav">
-      <div class="nav-menu">
-        <a class="nav-logo" href="#home">
-          <img src="/assets/images/logo.png" alt="Logo CT-DEV" />
-        </a>
-        <div class="nav-links">
-          <ul>
-            <li class="nav__link nav__link--active">
-              <a href="#home">Accueil</a>
-            </li>
-            <li class="nav__link"><a href="#about">A propos</a></li>
-            <li class="nav__link"><a href="#skills">Compétences</a></li>
-            <li class="nav__link"><a href="#portfolio">Portfolio</a></li>
-            <li class="nav__link"><a href="#contact">Contact</a></li>
-          </ul>
+    <div class="bg-img">
+      <nav class="navbar transparent-nav">
+        <div class="nav-menu">
+          <a class="nav-logo" href="#home">
+            <img src="/assets/images/logo.png" alt="Logo CT-DEV" />
+          </a>
+          <div class="nav-links">
+            <ul>
+              <li class="nav__link nav__link--active">
+                <a href="#home">Accueil</a>
+              </li>
+              <li class="nav__link"><a href="#about">A propos</a></li>
+              <li class="nav__link"><a href="#skills">Compétences</a></li>
+              <li class="nav__link"><a href="#portfolio">Portfolio</a></li>
+              <li class="nav__link"><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-    <div id="home" class="banner">
-      <h1>CASTALDI Thomas</h1>
-      <p>Développeur Web Junior</p>
-      <div class="btn__banner">
-        <a class="btn btn__portfolio" href="#portfolio"
-          >Parcourir mon portfolio</a
-        >
-        <a class="btn btn__CV" href="#CV">consulter mon CV</a>
+      </nav>
+      <div id="home" class="banner">
+        <h1>CASTALDI Thomas</h1>
+        <p>Développeur Web Junior</p>
+        <div class="btn__banner">
+          <a class="btn btn__portfolio" href="#portfolio"
+            >Parcourir mon portfolio</a
+          >
+          <a class="btn btn__CV" target="_blank" href="/assets/files/CV-Thomas-Castaldi.pdf">consulter mon CV</a>
+        </div>
       </div>
     </div>
     <main>
-      <section id="about" class="section" onclick="location.href='#'">
+      <section id="about" class="section">
         <div class="container">
           <div class="section-title">
             <h1>A propos</h1>
@@ -199,7 +201,7 @@
               <img class="project-img" src="/assets/images/book-my-kid.png" alt="Book My Kid" />
               <div class="project-description">
                 <p class="title">Book My Kid</p>
-                <p class="project-description-text">Premiere application web lors de ma formation au Wagon Marseille</p>
+                <p class="project-description-text">Première application web lors de ma formation au Wagon Marseille</p>
                 <p class="project-technos">Technologies :</p>
                 <p>
                   <span class="tag">HTML</span>
@@ -218,7 +220,7 @@
               <img class="project-img" src="/assets/images/green-me-food.png" alt="Green Me Food" />
               <div class="project-description">
                 <p class="title">Green Me Food</p>
-                <p class="project-description-text">Projet final réalisé en équipe de 4 personnes en seulement 2 semaines</p>
+                <p class="project-description-text">Projet final de la formation réalisé en équipe de 4 personnes en seulement 2 semaines</p>
                 <p class="project-technos">Technologies :</p>
                 <p>
                   <span class="tag">HTML</span>
@@ -234,6 +236,64 @@
                 </p>
               </div>
             </div>
+            <div class="project">
+              <img class="project-img" src="/assets/images/mobil-home.png" alt="Le Mobil-Home de St Trop'" />
+              <div class="project-description">
+                <p class="title">Le Mobil-Home de St Trop'</p>
+                <p class="project-description-text">Premier projet personnel d'un site vitrine pour de la location saisonnière</p>
+                <p class="project-technos">Technologies :</p>
+                <p>
+                  <span class="tag">HTML</span>
+                  <span class="tag">SASS</span>
+                  <span class="tag">Javascript</span>
+                </p>
+                <p class="project-button">
+                  <a href="https://www.lemobilhomedesttrop.go.yo.fr/" target="_blank" class="visit-button">
+                    <span class="fas fa-globe-americas"></span>
+                    Accéder au site</span>
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div class="project">
+              <img class="project-img" src="/assets/images/studio-cashmere-8.png" alt="Studio Cashmere 8" />
+              <div class="project-description">
+                <p class="title">Studio Cashmere 8</p>
+                <p class="project-description-text">Réalisation d'un site e-commerce pour un client avec l'utilisation du CMS Shopify</p>
+                <p class="project-technos">Technologies :</p>
+                <p>
+                  <span class="tag">Shopify</span>
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                </p>
+                <p class="project-button">
+                  <a href="https://www.studiocashmere8.com/" target="_blank" class="visit-button">
+                    <span class="fas fa-globe-americas"></span>
+                      Accéder au site</span>
+                  </a>
+                </p>
+              </div>
+            </div>
+            <!-- <div class="project">
+              <img class="project-img" src="/assets/images/" alt="" />
+              <div class="project-description">
+                <p class="title">Green Me Food</p>
+                <p class="project-description-text">Projet final de la formation réalisé en équipe de 4 personnes en seulement 2 semaines</p>
+                <p class="project-technos">Technologies :</p>
+                <p>
+                  <span class="tag">HTML</span>
+                  <span class="tag">SASS</span>
+                  <span class="tag">Javascript</span>
+                  <span class="tag">Ruby on Rails</span>
+                </p>
+                <p class="project-button">
+                  <a href="https://www.green-me-food.me/" target="_blank" class="visit-button">
+                    <span class="fas fa-globe-americas"></span>
+                      Accéder au site</span>
+                  </a>
+                </p>
+              </div>
+            </div> -->
         </div>
       </section>
       <section id="contact" class="section">
@@ -241,14 +301,14 @@
           <div class="section-title">
             <h1>Contact</h1>
           </div>
-          <div class="info-perso">
-            <button>
-              <a href="mailto:castaldi.thomas@gmail.com"></a>
-            </button>
-            <p>Téléphone</p>
+          <div class="informations">
+            <p>Vous souhaitez me contacter ?<br>
+            Dans ce cas, vous pouvez m'envoyer directement un e-mail en cliquant sur le button ci dessous :</p>
+            <a href="mailto:castaldi.thomas@gmail.com" class="btn btn__mail">Me contacter</a>
+            <p>Vous pouvez également aller visiter mon profil sur les sites suivants</p>
             <div class="social-network">
-              <a href="#"><i class="fab fa-github"></i></a>
-              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="https://www.linkedin.com/in/thomas-castaldi/"><i class="fab fa-linkedin"></i></a>
+              <a href="https://github.com/ThomasCast?tab=repositories"><i class="fab fa-github"></i></a>
             </div>
           </div>
         </div>
@@ -256,15 +316,17 @@
     </main>
     <section id="footer" class="section">
       <div class="container">
-        <div class="footer-copyright">
-          <p>
-            CT-DEV © 2022 - Création de sites et applications web - Freelance
-            Marseille (France)
-          </p>
-        </div>
-        <div class="footer-links">
-          <a href="#"><i class="fab fa-github"></i></a>
-          <a href="#"><i class="fab fa-linkedin"></i></a>
+        <div class="footer">
+          <div class="footer-copyright">
+            <p>
+                CT-DEV © 2022 - Création de sites et applications web - Freelance
+                Marseille (France)
+            </p>
+          </div>
+          <div class="footer-links">
+            <a href="https://www.linkedin.com/in/thomas-castaldi/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/ThomasCast?tab=repositories"><i class="fab fa-github"></i></a>
+          </div>
         </div>
       </div>
     </section>

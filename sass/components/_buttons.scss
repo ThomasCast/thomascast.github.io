@@ -19,12 +19,13 @@
       background-color: $colour-primary;
     }
   }
-  &__CV {
+  &__CV,
+  &__mail {
     color: white;
     background-color: $colour-primary;
     &:hover {
       color: $colour-primary;
-      background-color: white;
+      background-color: transparent;
     }
   }
 }

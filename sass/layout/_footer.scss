@@ -4,6 +4,32 @@
   height: 150px;
 }
 
-.footer-links a {
-  color: white;
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer-copyright {
+  font-size: 20px;
+  order: 1;
+  flex: 2 0 auto;
+  & p {
+    text-align: center;
+  }
+}
+
+.footer-links {
+  order: 2;
+  & a {
+    color: white;
+    font-size: 30px;
+    margin-left: 100px;
+    margin: 0 5px;
+    opacity: 0.6;
+    &:hover {
+      opacity: 1;
+      transition: ease-in-out all 0.5s;
+    }
+  }
 }
