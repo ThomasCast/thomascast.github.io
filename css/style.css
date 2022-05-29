@@ -83,7 +83,7 @@ button {
 }
 
 .bg-img {
-  background-image: url(/assets/images/Animated\ Shape3.svg);
+  background-image: url(/assets/images/Animated\ Shape.svg);
   background-position: 45%;
   background-size: cover;
 }
@@ -109,6 +109,7 @@ button {
   text-transform: uppercase;
   letter-spacing: 7px;
   font-size: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .navbar {
@@ -184,6 +185,7 @@ button {
 .section-title {
   text-align: center;
   text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 #about {
@@ -309,27 +311,28 @@ button {
 .project-description p.title {
   font-size: 28px;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .project-description p.project-description-text {
   font-size: 18px;
   font-weight: 400;
   font-style: italic;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .project-description p.project-technos {
   font-weight: 500;
   text-decoration: underline;
-  margin-bottom: 10px;
+  font-size: 18px;
+  margin-bottom: 5px;
 }
 .project-description p.project-button {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .tag {
   padding: 5px;
   font-size: 18px;
-  margin: 0 5px;
+  margin: 10px 5px;
   background-color: #166678;
   color: white;
   border-radius: 5px;
@@ -337,8 +340,15 @@ button {
 
 .visit-button {
   color: #166678;
-  margin-top: 15px;
-  font-size: 25px;
+  background-color: white;
+  font-size: 20px;
+  border: 2px solid #166678;
+  border-radius: 5px;
+  padding: 5px;
+}
+.visit-button:hover {
+  background-color: #166678;
+  color: white;
 }
 
 .informations {
