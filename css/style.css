@@ -121,10 +121,12 @@ button {
 }
 
 .transparent-navbar {
+  transition: all 0.5s;
   background-color: transparent;
 }
 
 .white-navbar {
+  transition: all 0.5s;
   background-color: white;
   border-bottom: 1px solid #eeeeee;
 }
@@ -302,7 +304,7 @@ button {
   top: 0px;
   left: 0px;
   width: calc(100% - 10px);
-  background-color: rgba(170, 207, 208, 0.9);
+  background-color: rgba(170, 207, 208, 0.9019607843);
   color: #166678;
   visibility: hidden;
   opacity: 0;

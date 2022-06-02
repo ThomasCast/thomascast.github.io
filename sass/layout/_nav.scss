@@ -7,10 +7,12 @@
 }
 
 .transparent-navbar {
+  transition: all 0.5s;
   background-color: transparent;
 }
 
 .white-navbar {
+  transition: all 0.5s;
   background-color: white;
   border-bottom: 1px solid #eeeeee;
 }
