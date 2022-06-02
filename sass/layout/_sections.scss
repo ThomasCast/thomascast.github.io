@@ -103,9 +103,12 @@
   border-radius: 10px;
   height: 280px;
   box-shadow: 0px 2px 10px 0px rgb(0 0 0 / 30%);
-  &:hover .project-description {
-    visibility: visible;
-    opacity: 1;
+  &:hover {
+    transform: translateY(-5px);
+    .project-description {
+      visibility: visible;
+      opacity: 1;
+    }
   }
 }
 
@@ -126,7 +129,7 @@
   top: 0px;
   left: 0px;
   width: calc(100% - 10px);
-  background-color: $colour-secondary;
+  background-color: $colour-secondary-light;
   color: $colour-primary-dark;
   visibility: hidden;
   opacity: 0;
@@ -169,7 +172,7 @@
   color: $colour-primary-dark;
   background-color: white;
   font-size: 20px;
-  border: 2px solid $colour-primary-dark;
+  border: 1px solid $colour-primary-dark;
   border-radius: 5px;
   padding: 5px;
   &:hover {

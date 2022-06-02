@@ -277,6 +277,9 @@ button {
   height: 280px;
   box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.3);
 }
+.project:hover {
+  transform: translateY(-5px);
+}
 .project:hover .project-description {
   visibility: visible;
   opacity: 1;
@@ -299,7 +302,7 @@ button {
   top: 0px;
   left: 0px;
   width: calc(100% - 10px);
-  background-color: #aacfd0;
+  background-color: rgba(170, 207, 208, 0.9);
   color: #166678;
   visibility: hidden;
   opacity: 0;
@@ -342,7 +345,7 @@ button {
   color: #166678;
   background-color: white;
   font-size: 20px;
-  border: 2px solid #166678;
+  border: 1px solid #166678;
   border-radius: 5px;
   padding: 5px;
 }
