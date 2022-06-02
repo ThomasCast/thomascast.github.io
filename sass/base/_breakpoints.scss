@@ -1,0 +1,113 @@
+// /* DESKTOP*/
+// @media screen and (min-width: $min-desktop) and (max-width: $max-desktop) {
+//   #menu {
+//     background-color: red;
+//   }
+// }
+
+/*TABLET*/
+@media screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
+  #menu-content {
+    & li {
+      display: none;
+    }
+    & a.menu-icon {
+      float: right;
+      display: block;
+      font-size: 1.7em;
+      color: $colour-primary-dark;
+    }
+    &.responsive {
+      position: relative;
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: white;
+      transition: all 0.6s;
+      & .nav-links ul {
+        margin-top: 10px;
+        & a {
+          font-size: 24px;
+        }
+      }
+      & a.menu-icon {
+        position: absolute;
+        right: 15px;
+        top: 24px;
+      }
+      & li {
+        float: none;
+        display: block;
+        text-align: left;
+        font-size: 1.35em;
+      }
+    }
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .portfolio {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    & .footer-copyright p {
+      font-size: 16px;
+    }
+  }
+}
+
+/*SMARTPHONE*/
+@media screen and (max-width: $max-smartphone) {
+  .navbar {
+    & li {
+      display: none;
+    }
+    & a.menu-icon {
+      float: right;
+      display: block;
+      font-size: 3em;
+    }
+    &.responsive {
+      position: relative;
+      flex-direction: column;
+      align-items: flex-start;
+      & a.menu-icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      & li {
+        float: none;
+        display: block;
+        text-align: left;
+        font-size: 1.3em;
+      }
+    }
+  }
+
+  .logo h1 {
+    font-size: 1.3em;
+  }
+
+  .banner-container {
+    & h1,
+    h4,
+    p {
+      font-size: 1.6em;
+    }
+  }
+
+  .footer {
+    padding: 15px;
+    & p,
+    a {
+      font-size: 0.7em;
+    }
+  }
+}

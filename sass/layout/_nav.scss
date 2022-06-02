@@ -17,12 +17,15 @@
   border-bottom: 1px solid #eeeeee;
 }
 
-.navbar-menu {
+#menu-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 15px;
+  & a.menu-icon {
+    display: none;
+  }
 }
 
 .navbar-logo {

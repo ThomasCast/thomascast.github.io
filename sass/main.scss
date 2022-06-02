@@ -8,10 +8,11 @@
 
 @import './components/buttons';
 
-@import './layout/banner';
 @import './layout/nav';
+@import './layout/banner';
 @import './layout/container';
 @import './layout/sections';
 @import './layout/footer';
 
+@import './base/breakpoints';
 // @import "./pages/about";
