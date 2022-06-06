@@ -407,13 +407,14 @@ button {
   background-color: #166678;
   color: white;
   border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px rgba(157, 157, 157, 0.3);
 }
 
 .visit-button {
   color: #166678;
   background-color: white;
+  box-shadow: 0px 0px 5px 0px rgba(157, 157, 157, 0.3);
   font-size: 20px;
-  border: 1px solid #166678;
   border-radius: 5px;
   padding: 5px;
 }
@@ -537,11 +538,8 @@ button {
     font-size: 26px;
   }
 
-  .skills-group-items img {
-    width: 70px;
-  }
   .skills-group-items h3 {
-    font-size: 18px;
+    font-size: 22px;
     margin-top: 0;
     margin-bottom: 15px;
   }
@@ -681,7 +679,7 @@ button {
     padding: 0;
   }
   .skills-group-items img {
-    width: 60px;
+    width: 70px;
   }
   .skills-group-items h3 {
     font-size: 16px;
