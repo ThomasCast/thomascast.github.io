@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Portfolio - Thomas Castaldi</title>
     <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
-    <script src="js/script.js"></script>
+    <!-- <script src="js/script.js"></script> -->
   </head>
   <body>
     <nav id="nav" class="navbar">
@@ -23,7 +23,7 @@
         <a class="navbar-logo" href="#home">
           <img src="/assets/images/logo.png" alt="Logo CT-DEV" />
         </a>
-        <div class="nav-links">
+        <div id="links" class="nav-links">
           <ul>
             <li class="nav__link"><a href="#home">Accueil</a></li>
             <li class="nav__link"><a href="#about">A propos</a></li>
@@ -38,7 +38,7 @@
       <div id="home" class="banner bg-img">
         <h1>CASTALDI Thomas</h1>
         <p>Développeur Web Junior</p>
-        <div class="btn__banner">
+        <div class="btn__banner fade-in-bottom">
           <a class="btn btn__portfolio" href="#portfolio">Parcourir mon portfolio</a>
           <a class="btn btn__CV" target="_blank" href="/assets/files/CV-Thomas-Castaldi.pdf">consulter mon CV</a>
         </div>
@@ -86,7 +86,7 @@
             <h1>Mes compétences</h1>
           </div>
           <div class="blocks">
-            <div class="skills-block">
+            <div class="skills-block js-scroll slide-left">
               <div class="skills-title">
                 <h2>Front-End</h2>
               </div>
@@ -109,7 +109,7 @@
                 </div>
               </div>
             </div>
-            <div class="skills-block">
+            <div class="skills-block js-scroll slide-right">
               <div class="skills-title">
                 <h2>Back-End</h2>
               </div>
@@ -124,7 +124,7 @@
                 </div>
               </div>
             </div>
-            <div class="skills-block">
+            <div class="skills-block scroll-element js-scroll slide-left">
               <div class="skills-title">
                 <h2>CMS</h2>
               </div>
@@ -139,7 +139,7 @@
                 </div>
               </div>
             </div>
-            <div class="skills-block">
+            <div class="skills-block js-scroll slide-right">
               <div class="skills-title">
                 <h2>Outils</h2>
               </div>
@@ -173,7 +173,7 @@
             <h1>Portfolio</h1>
           </div>
           <div class="portfolio projects-cards">
-            <div class="project">
+            <div class="project js-scroll fade-in">
               <img class="project-img" src="/assets/images/portfolio.png" alt="Portfolio" />
               <div class="project-description">
                 <p class="title">Portfolio</p>
@@ -193,13 +193,13 @@
                 </p>
               </div>
             </div>
-            <div class="project">
+            <div class="project js-scroll fade-in">
               <img class="project-img" src="/assets/images/book-my-kid.png" alt="Book My Kid" />
               <div class="project-description">
                 <p class="title">Book My Kid</p>
                 <p class="project-description-text">
-                  Première application web lors de ma formation au Wagon Marseille.
-                  Le but était de faire un clone d'Airbnb en seulement 1 semaine.
+                  Première application web au Wagon Marseille.
+                  L'objectif était de faire un clone d'Airbnb en seulement 1 semaine.
                 </p>
                 <p class="project-technos">Technologies :</p>
                 <p>
@@ -215,7 +215,7 @@
                 </p>
               </div>
             </div>
-            <div class="project">
+            <div class="project js-scroll fade-in">
               <img class="project-img" src="/assets/images/green-me-food.png" alt="Green Me Food" />
               <div class="project-description">
                 <p class="title">Green Me Food</p>
@@ -235,7 +235,7 @@
                 </p>
               </div>
             </div>
-            <div class="project">
+            <div class="project js-scroll fade-in">
               <img class="project-img" src="/assets/images/mobil-home.png" alt="Le Mobil-Home de St Trop'" />
               <div class="project-description">
                 <p class="title">Le Mobil-Home de St Trop'</p>
@@ -254,7 +254,7 @@
                 </p>
               </div>
             </div>
-            <div class="project">
+            <div class="project js-scroll fade-in">
               <img class="project-img" src="/assets/images/studio-cashmere-8.png" alt="Studio Cashmere 8" />
               <div class="project-description">
                 <p class="title">Studio Cashmere 8</p>
@@ -329,5 +329,6 @@
         </div>
       </div>
     </section>
+    <script async src="/js/script.js"></script>
   </body>
 </html>

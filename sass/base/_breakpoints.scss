@@ -1,9 +1,9 @@
-// /* DESKTOP*/
-// @media screen and (min-width: $min-desktop) and (max-width: $max-desktop) {
-//   #menu {
-//     background-color: red;
-//   }
-// }
+/* DESKTOP*/
+@media screen and (min-width: $min-desktop) {
+  #skills h1 {
+    margin-bottom: 20px;
+  }
+}
 
 /*TABLET*/
 @media screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
