@@ -620,6 +620,10 @@ button {
     margin-bottom: 15px;
   }
 
+  .skills-items {
+    padding: 15px;
+  }
+
   .portfolio {
     display: flex;
     flex-direction: column;
