@@ -48,6 +48,28 @@
     flex-direction: column;
   }
 
+  #skills h1 {
+    margin-bottom: 20px;
+  }
+
+  .skills-title {
+    padding: 5px;
+    & h2 {
+      font-size: 26px;
+    }
+  }
+
+  .skills-group-items {
+    & img {
+      width: 70px;
+    }
+    & h3 {
+      font-size: 18px;
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+  }
+
   .portfolio {
     display: flex;
     flex-direction: column;
@@ -64,7 +86,18 @@
 
 /*SMARTPHONE*/
 @media screen and (max-width: $max-smartphone) {
-  #nav {
+  .container {
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  // NAVBAR //
+
+  .navbar-logo {
+    height: 65px;
+    & img {
+      width: 65px;
+    }
   }
 
   #menu-content {
@@ -103,15 +136,131 @@
     }
   }
 
+  // BANNER //
+
+  #home {
+    & h1 {
+      font-size: 40px;
+      text-align: center;
+      padding: 0 5px;
+    }
+    & p {
+      text-align: center;
+      font-size: 16px;
+      padding: 0 5px;
+    }
+  }
+
+  .btn__banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .btn {
+    text-align: center;
+    &__CV {
+      margin-top: 20px;
+    }
+  }
+
+  .banner {
+    & h1 {
+      font-size: 30px;
+      font-weight: 700;
+      line-height: normal;
+      margin-bottom: 10px;
+    }
+    & p {
+      font-size: 10px;
+    }
+  }
+
+  // SECTIONS //
+
+  .section {
+    padding: 30px 0 30px 0;
+  }
+  .section-title h1 {
+    font-size: 30px;
+  }
+
+  // ABOUT SECTION //
+
   .about {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+
+  .photo {
+    & img {
+      width: 150px;
+      border-radius: 50%;
+    }
+  }
+
+  .description p {
+    font-size: 16px;
+  }
+
+  // SKILLS SECTION //
+
+  #skills h1 {
+    margin-bottom: 20px;
+  }
+
+  .skills-title {
+    padding: 5px;
+    & h2 {
+      font-size: 26px;
+    }
+  }
+
+  .skills-group-items {
+    padding: 0;
+    & img {
+      width: 60px;
+    }
+    & h3 {
+      font-size: 16px;
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+  }
+
+  // PORTFOLIO SECTION //
 
   .portfolio {
     display: flex;
     flex-direction: column;
   }
+  .project-description {
+    & p {
+      text-align: center;
+      &.title {
+        font-size: 20px;
+        font-weight: 700;
+      }
+      &.project-description-text {
+        font-size: 16px;
+        font-weight: 400;
+        font-style: italic;
+        margin-bottom: 5px;
+      }
+      &.project-technos {
+        text-decoration: underline;
+        font-size: 16px;
+      }
+      &.project-button {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  // FOOTER //
 
   .footer {
     display: flex;

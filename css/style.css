@@ -101,14 +101,14 @@ button {
   border-bottom: 1px solid #eeeeee;
 }
 
-#menu-content {
+.menu-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 15px;
 }
-#menu-content a.menu-icon {
+.menu-content a.menu-icon {
   display: none;
 }
 
@@ -217,20 +217,19 @@ button {
 }
 
 .blocks {
-  padding: 30px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 
 .skills-block {
   background-color: #aacfd0;
+  width: 550px;
   border-radius: 15px;
-  min-width: 600px;
-  padding: 0 30px 30px 30px;
+  margin: 0 30px 30px 30px;
   box-shadow: 0px 0px 5px 0px rgba(157, 157, 157, 0.3);
-  margin: 25px;
 }
 
 .skills-title {
@@ -243,12 +242,10 @@ button {
 .skills-group-items {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   padding: 20px;
-}
-
-.skills-group-items {
   text-align: center;
 }
 .skills-group-items img {
@@ -261,6 +258,10 @@ button {
 .skills-group-items h3 {
   font-size: 24px;
   color: #166678;
+}
+
+.skills-items {
+  padding: 10px;
 }
 
 #portfolio {
@@ -328,7 +329,6 @@ button {
   margin-bottom: 5px;
 }
 .project-description p.project-technos {
-  font-weight: 500;
   text-decoration: underline;
   font-size: 18px;
   margin-bottom: 5px;
@@ -457,6 +457,26 @@ button {
     flex-direction: column;
   }
 
+  #skills h1 {
+    margin-bottom: 20px;
+  }
+
+  .skills-title {
+    padding: 5px;
+  }
+  .skills-title h2 {
+    font-size: 26px;
+  }
+
+  .skills-group-items img {
+    width: 70px;
+  }
+  .skills-group-items h3 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
   .portfolio {
     display: flex;
     flex-direction: column;
@@ -472,6 +492,18 @@ button {
 }
 /*SMARTPHONE*/
 @media screen and (max-width: 767px) {
+  .container {
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  .navbar-logo {
+    height: 65px;
+  }
+  .navbar-logo img {
+    width: 65px;
+  }
+
   #menu-content li {
     display: none;
   }
@@ -506,14 +538,112 @@ button {
     font-size: 1.35em;
   }
 
+  #home h1 {
+    font-size: 40px;
+    text-align: center;
+    padding: 0 5px;
+  }
+  #home p {
+    text-align: center;
+    font-size: 16px;
+    padding: 0 5px;
+  }
+
+  .btn__banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .btn {
+    text-align: center;
+  }
+  .btn__CV {
+    margin-top: 20px;
+  }
+
+  .banner h1 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 10px;
+  }
+  .banner p {
+    font-size: 10px;
+  }
+
+  .section {
+    padding: 30px 0 30px 0;
+  }
+
+  .section-title h1 {
+    font-size: 30px;
+  }
+
   .about {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .photo img {
+    width: 150px;
+    border-radius: 50%;
+  }
+
+  .description p {
+    font-size: 16px;
+  }
+
+  #skills h1 {
+    margin-bottom: 20px;
+  }
+
+  .skills-title {
+    padding: 5px;
+  }
+  .skills-title h2 {
+    font-size: 26px;
+  }
+
+  .skills-group-items {
+    padding: 0;
+  }
+  .skills-group-items img {
+    width: 60px;
+  }
+  .skills-group-items h3 {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 15px;
   }
 
   .portfolio {
     display: flex;
     flex-direction: column;
+  }
+
+  .project-description p {
+    text-align: center;
+  }
+  .project-description p.title {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .project-description p.project-description-text {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 5px;
+  }
+  .project-description p.project-technos {
+    text-decoration: underline;
+    font-size: 16px;
+  }
+  .project-description p.project-button {
+    margin-top: 10px;
   }
 
   .footer {
